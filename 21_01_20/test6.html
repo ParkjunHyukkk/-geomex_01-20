@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 1000px;
+            border: 1px solid black;
+        }
+
+        .box ul.list>li {
+            float: left;
+            width: 20%;
+            border-right: 1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            height: 45px;
+            line-height: 45px;
+            position: relative;
+        }
+
+        .box ul.list>li:last-child {
+            border-right: 0;
+        }
+
+        .box ul.list>li:hover {
+            background-color: orange;
+        }
+        .box ul.list > li > .sub{
+            position: absolute;
+            top:45px;
+            left:0;
+            display: none;
+        }
+
+        .box ul.list>li:hover>.sub{
+            display: block;
+        }
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+        <ul class="list">
+            <li>메인 메뉴1
+                <ul class="sub">
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+            </li>
+            <li>메인 메뉴2
+                <ul class="sub">
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+            </li>
+            <li>메인 메뉴3
+                <ul class="sub">
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+            </li>
+            <li>메인 메뉴4
+                <ul class="sub">
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+            </li>
+            <li>메인 메뉴5
+                <ul class="sub">
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

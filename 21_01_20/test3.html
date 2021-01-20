@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul,li{
+            list-style: none;
+        }
+
+        #wrap{
+            margin:30px;
+            width: 1000;
+        }
+        #wrap .list{
+            border-radius: 3px;
+            box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+        }
+        #wrap .list li{
+            float: left;
+            width: 16.66666%;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+        }
+        #wrap .list li:hover{
+            background-color: orange;
+        }
+        .content_box{
+            margin-top: 20px;
+        }
+        .content_box .content{
+            float: left;
+            border-radius: 3px;
+            box-shadow: 0 0 3px 1px rgba(0,0,0,0.2);
+            width: 490px;
+            margin-right: 20px;
+            margin-top: 10px;
+            position: relative;
+        }
+        .content_box .content:nth-child(2n){
+            margin-right: 0;        
+        }
+        .content_box .content:nth-child(3) .orange{
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+   
+
+
+
+    
+        .clearfix:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+<div id = "wrap">
+    <ul class = "list clearfix">
+        <li class = "btn">이전 버튼</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class = "btn">다음 버튼</li>
+        </ul>
+        <div class="content_box">
+            <div class="content">
+                <div class="orange"></div>
+                <p class ="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil.</p>
+            </div>
+            <div class="content">
+                <div class="orange"></div>
+                <p class ="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil.</p>
+            </div>
+            <div class="content">
+                <div class="orange"></div>
+                <p class ="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil.</p>
+            </div>
+            <div class="content">
+                <div class="orange"></div>
+                <p class ="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil.</p>
+            </div>
+            <div class="content">
+                <div class="orange"></div>
+                <p class ="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil.</p>
+            </div>
+            <div class="content">
+                <div class="orange"></div>
+                <p class ="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nihil.</p>
+            </div>
+        </div>
+        </div>
+
+</body>
+
+</html>
