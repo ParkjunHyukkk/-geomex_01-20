@@ -1,0 +1,22 @@
+(1)
+Position
+-엘리먼트의 위치를 지정
+
+(2)
+-position : static
+>top, right, botton, left
+=적용되지 않음!!
+아래로 밀어내는게 +
+위로 밀어내는게 -
+<- -100
+-> 100
+
+(3)
+position: absolute - 아예 자기자리가 사라짐
+position: relative - 자기 자리 유지함, 기준점이 바뀜 해당 상자로, 없으면 브라우저가 시작위치!
+
+(4)
+padding 위쪽 오른쪽 아래 왼쪽
+padding 위아래,왼쪽오른쪽
+padding 왼쪽,위아래,오른쪽
+
